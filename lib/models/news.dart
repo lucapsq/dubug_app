@@ -20,11 +20,11 @@ class News {
     return News(
       id: json['id'],
       type: json['type'],
-      pubTime: DateTime.parse(json['pubTime']),
+      pubTime: DateTime.parse(json['pub_time']),
       images: json['images'],
       title: json['title'],
       content: json['content'],
-      eventTime: DateTime.parse(json['eventTime']),
+      eventTime: DateTime.parse(json['event_time']),
     );
   }
 }

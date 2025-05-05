@@ -8,7 +8,6 @@ class NewsService {
         await http.get(Uri.parse('http://localhost:3000/api/data'));
 
     if (response.statusCode == 200) {
-      print(response.body);
       final List decoded = jsonDecode(response.body);
 
       return decoded.map((json) => News.fromJson(json)).toList();
